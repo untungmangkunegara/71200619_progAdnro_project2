@@ -64,7 +64,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             >
 
             <EditText
@@ -79,6 +78,35 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="HAPUS" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cari Catatan"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/edtCariJudul"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:hint="Judul Catatan yg ingin dicari" />
+
+            <Button
+                android:id="@+id/btnCariCatatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="CARI" />
 
         </LinearLayout>
 

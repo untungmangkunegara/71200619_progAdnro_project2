@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         val judulHapus = findViewById<EditText>(R.id.edtHapusJudul)
         val btnDeleteCatatan = findViewById<Button>(R.id.btnDeleteCatatan)
 
+        val judulCari = findViewById<EditText>(R.id.edtCariJudul)
+        val btnCariCatatan = findViewById<Button>(R.id.btnCariCatatan)
+
         btnSimpanCatatan.setOnClickListener{
             val catatan = catatan(isi.text.toString(), tanggal.text.toString(), judul.text.toString())
 
@@ -37,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             firestore?.collection("catatan")?.get()?.addOnSuccessListener {data ->
                 var output = ""
                 for(hasil in data){
-                    output += "\n${hasil["judul"]} \n${hasil["tanggal"]} \n${hasil["isi"]} \n ==========="
+                    output += "\n${hasil["judul"]} \n${hasil["tanggal"]} \n${hasil["isi"]} \n==========="
                 }
                 Toast.makeText(this, "Berhasil menambah catatan", Toast.LENGTH_SHORT).show()
                 txvoutput.text = output
@@ -50,10 +53,17 @@ class MainActivity : AppCompatActivity() {
             firestore?.collection("catatan")?.get()?.addOnSuccessListener { data ->
                 var output = ""
                 for (hasil in data) {
-                    output += "\n${hasil["judul"]} \n${hasil["tanggal"]} \n${hasil["isi"]} \n ==========="
+                    output += "\n${hasil["judul"]} \n${hasil["tanggal"]} \n${hasil["isi"]} \n==========="
                 }
                 txvoutput.text = output
             }
+        }
+
+        btnCariCatatan.setOnClickListener(){
+            val cari = judulCari.text.toString()
+            val pencarian = firestore?.collection("catatan")?.document(cari)
+            
+
         }
     }
 }
