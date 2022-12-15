@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "500301237953",
+    "project_id": "menyimpancatatanprogandro02",
+    "storage_bucket": "menyimpancatatanprogandro02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500301237953:android:d6e488e39876faf41dce40",
+        "android_client_info": {
+          "package_name": "com.example.menyimpancatatanprogandro02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500301237953-01h3durklq7bgsn4bljq7khk63sfrssn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwZ6KTz63bRCxsfgYWMh4dhMMgX9qOwbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500301237953-01h3durklq7bgsn4bljq7khk63sfrssn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
