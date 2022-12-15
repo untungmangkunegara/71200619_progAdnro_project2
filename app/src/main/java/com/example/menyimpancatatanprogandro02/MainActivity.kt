@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 for(hasil in data){
                     output += "\n${hasil["judul"]} \n${hasil["tanggal"]} \n${hasil["isi"]} \n==========="
                 }
-                Toast.makeText(this, "Berhasil menambah catatan", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Berhasil submit catatan", Toast.LENGTH_SHORT).show()
                 txvoutput.text = output
             }
         }
