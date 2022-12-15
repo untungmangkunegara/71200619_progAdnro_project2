@@ -62,8 +62,6 @@ class MainActivity : AppCompatActivity() {
         btnCariCatatan.setOnClickListener(){
             val cari = judulCari.text.toString()
             val pencarian = firestore?.collection("catatan")?.document(cari)
-            
-
         }
     }
 }

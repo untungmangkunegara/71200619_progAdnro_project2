@@ -48,7 +48,22 @@
             android:id="@+id/btnSimpanCatatan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BUAT CATATAN"
+            android:text="SUBMIT CATATAN / EDIT CATATAN"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Jika judul baru yang dimasukan, maka akan menjadi catatan baru."
+            android:textSize="13sp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Untuk mengedit sebuah catatan, isikan judul catatan kamu di kolom pengisian. Kemudian ubah tanggal atau isi catatan kamu. Pastikan judul kamu benar."
+            android:textSize="13sp"
             android:layout_marginBottom="10dp"
             />
 
